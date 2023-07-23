@@ -1,0 +1,211 @@
+@import "../variables.scss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.spotify{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: black;
+    .into-header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: rgb(42, 38, 38);
+        width: 1200px;
+        button{
+            margin-right: 10px;
+            width: 90px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .sign-up{
+            border: none;
+            background: none;
+            color: white;
+        }
+        .log-in{
+            background-color: white;
+            color: black;
+        }
+    }
+}
+.menu{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: black;
+    width: 325px;
+    .home{
+        border-radius: 10px;
+        background-color: rgb(42, 38, 38);
+        border-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 125px;
+        margin-left: 10px;
+        margin-top: 10px;
+        justify-content: center;
+        gap: 20px;
+        button{
+            margin-left: 7px;
+            width: 95%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            border: none;
+            background: none;
+            color: white;
+            i{
+                font-size: 30px;
+            }
+        }
+    }
+    .library{
+        border-radius: 10px;
+        background-color: rgb(42, 38, 38);
+        border-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 565px;
+        margin-left: 10px;
+        margin-top: 10px;
+        gap: 20px;
+        .library-buttons{
+            display: flex;
+            flex-direction: row;
+            button{
+                margin-left: 7px;
+                width: 95%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-self: flex-start;
+                margin-top: 15px;
+                gap: 10px;
+                border: none;
+                background: none;
+                color: white;
+                i{
+                    font-size: 30px;
+                }
+            }
+            .more{
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 10px;
+            }
+        }
+        .playlist{
+            border-radius: 10px;
+            background-color: rgb(67, 60, 60);
+            width: 93%;
+            height: 150px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            span{
+                align-self: flex-start;
+                margin-left: 10px;
+                margin-top: 20px;
+                font-weight: bold;
+                color: white;
+            }
+            #help{
+                font-size: 13px;
+            }
+            button{
+                margin-top: 20px;
+                background-color: white;
+                color: black;
+                width: 150px;
+                height: 35px;
+                border-radius: 20px;
+                margin-left: 10px;
+            }
+        }
+        #lang{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            border-color: white;
+            border-width: 1px;
+            background-color: rgb(42, 38, 38);
+            color: white;
+            width: 100px;
+            height: 35px;
+            border-radius: 20px;
+            margin-left: 20px;
+            font-size: 15px;
+            margin-top: 250px;
+            gap: 5px;
+        }
+    }
+}
+.cards{
+    background-color: rgb(42, 38, 38);
+    margin-left: 325px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    bottom: 0;
+    height: 640px;
+    width: 1200px;
+    border-radius: 10px;
+    .card{
+        border: none;
+        background-color: rgb(25, 23, 23);
+        margin-top: 35px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 200px;
+        height: 250px;
+        border-radius: 10px;
+        img{
+            width: 175px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .name{
+            display: flex;
+            color: white;
+            align-self: flex-start;
+            margin-left: 10px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        .description{
+            display: flex;
+            align-self: flex-start;
+            margin-left: 10px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: rgb(134, 127, 127);
+        }
+    }
+}
